@@ -31,6 +31,15 @@ section{font-family: 'Roboto Condensed', sans-serif;}
     text-transform: uppercase;
     padding: 0;
   }
+  h2 {
+    font-size: 175%;
+    line-height: 355%;
+    font-weight: 900;
+    color: #1f1e20;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
   
   a {
     color: #524c56;
@@ -160,6 +169,10 @@ section{font-family: 'Roboto Condensed', sans-serif;}
     margin: 0 auto;
   }
   
+  .wpb_wrapper{
+    justify-content: center;
+    margin: auto;
+  }
 
 
 
@@ -170,9 +183,12 @@ section{font-family: 'Roboto Condensed', sans-serif;}
     float:left;
     margin:2% 2%;
   }
+  
   .tres-partes-2 {
     width:29%;
     margin:20% 2%;
+    display:block;
+    margin:auto;;
   }
   
   .clearfix-padding {
@@ -274,10 +290,7 @@ section{font-family: 'Roboto Condensed', sans-serif;}
       display: inline-block;
     }
   
-    nav:hover ul {
-      /* display: block; */
-    }
-  
+   
     nav ul, nav:active ul {
       /* display:none; */
       z-index: 1000;
@@ -354,3 +367,9 @@ footer {
     color: var(--color-blanco);
     background-color: black ;}
   }
+  .screen-reader-response  {
+    margin: bottom 5px;
+    padding:0.3rem;
+    text-align: center;
+    ;}
+  

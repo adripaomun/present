@@ -10,8 +10,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-<link rel="javascript" href="vrrl.js">
-<script src="index.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+<script src="form.js"></script>
 
 </head>
 
@@ -54,89 +55,43 @@
         </div>
   </header>
 
-<div class="form">
-    <div data-vc-full-width="true" data-vc-full-width-init="true" 
-    class="formulario_1" 
-    style="position: relative; left: 22px; box-sizing: border-box; width: 794px; padding-left: 22px; padding-right: 22px;">
-    <div class="container-8">
-        <div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="vc_custom_heading vc_custom_1596232765764 text_align_left">
-<h2 style="font-size: 28px;color: #020202;line-height: 34px;text-align: left" 
-class="consulting-custom-title">¡Contactanos!</h2></div>
+ <p> Hemos dejado a dispocisión de nuestros clientes este espacio , para que nos dejen sus necesidades</p>
+
+      <div class="contact-form-loader">
+          <img src="./IMG/habilitar.jpg" alt="Cargando">
+      </div>
+<p>
+<h2>¡Contactanos!</h2></div></p>
 <div class="element ">
 <div class="wpb_wrapper">
 <p>Envianos sólo estos datos de tu Comercio para cotizarte lo más rápido posible.</p>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  <div class="mb-3">
+    <label for="email" class="form-label"></label>Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+      placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="Telefono" class="form-label">Telefono de contacto</label>
+    <input type="tel" name="Telefono" class="form-control" id="Telefono" placeholder="11 0000 0000" />
+  </div>
+  <div class="mb-3">
+    <label for="Metros cuadrados" class="form-label">metros cuadrados</label>
+    <input type="number" name="metros" class="form-control" id="metros" placeholder="15 metros" />
+  </div>
+  <div class="mb-3">
+    <label for="Comentarios" class="form-label">Dejanos tus comentarios</label>
+    <textarea class="form-control" name="Comentarios" id="Comentarios" rows="3"></textarea>
+  </div>
+  <div class="boton_enviar">
+    <input type="submit" value="Enviar">
+  </div>
+</form>
+<p>
 
-</div>
-</div>
-<div role="form" class="wpcf7" id="wpcf7-f508-p1478-o1" lang="en-US" dir="ltr">
-    <div class="screen-reader-response">
-        <p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-    <form action="#wpcf7-f508-p1478-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-    <div style="display: none;">
-    <input type="hidden" name="_wpcf7" value="508">
-    <input type="hidden" name="_wpcf7_version" value="5.4.1">
-    <input type="hidden" name="_wpcf7_locale" value="en_US">
-    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f508-p1478-o1">
-    <input type="hidden" name="_wpcf7_container_post" value="1478">
-    <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-    <input type="hidden" name="_wpcf7_recaptcha_response" value="">
-    </div>
-<div class="request_callback">
-<div class="row" style="margin: 0 -13px;">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<div class="input-group">
-<span class="wpcf7-form-control-wrap text-name">
-    <input type="text" name="text-name" value="" size="40" 
-    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nombre *"></span>
-</div>
-<div class="input-group">
-<span class="email"><input type="email" name="email" value="" size="40" 
-class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail *"></span>
-</div>
-<div class="input-group">
-<span class=" phone"><input type="tel" name="phone" value="" size="40" 
-class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Teléfono *"></span>
-</div>
-<div class="input-group">
-<span class="metros">
-    <input type="text" name="metros" value="" size="40" 
-    class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Metros cuadrados aproximados"></span>
-</div>
-<div class="input-group">
-<span class="direccion">
-    <input type="text" name="direccion" value="" size="40" 
-    class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Dirección en CABA"></span>
-</div>
-</div>
-<div class="col12">
-<div class="input-group">
-<span class=" rubro">
-    <input type="text" name="rubro" value="" size="40" 
-    class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Rubro a habilitar"></span>
-</div>
-<div class="input-group">
-<span class="message">
-    <textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Consulta *"></textarea></span>
-</div>
-<div class="input-group">
-<button type="submit" class="button size-lg icon_right">Enviar <i class="right"></i></button>
-</div>
-</div>
-</div>
-</div>
-<div class="wpcf7-response-output" aria-hidden="true">
-
-</div></form></div></div></div></div>
-
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
+</p>
 
 
-		</div>
-	</div>
-</div></div></div></div><div class="clearfix">
 
             <footer>
     <div class="banner-wrapper">
